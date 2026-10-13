@@ -116,6 +116,9 @@ header h1, header h2 { /* made this selector to only effect the h1 and h2 inside
     background: #222831;
     text-align: center;
     padding: 12px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
 .main-nav a {
