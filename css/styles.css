@@ -109,3 +109,26 @@ header h1, header h2 { /* made this selector to only effect the h1 and h2 inside
     background: #00ADB5;
     color: #222831;
 }
+
+/* Navigation bar 
+------------------------------------*/
+.main-nav {
+    background: #222831;
+    text-align: center;
+    padding: 12px;
+}
+
+.main-nav a {
+    display: inline-block;
+    color: #EEEEEE;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 10px 16px;
+    border-radius: 4px;
+}
+
+.main-nav a:hover,
+.main-nav a:focus-visible {
+    background: #00ADB5;
+    color: #222831;
+}
