@@ -106,8 +106,18 @@ header h1, header h2 { /* made this selector to only effect the h1 and h2 inside
 
 /* Education
 ------------------------------------*/
-.education{
-    background: #00ADB5;
+.education {
+    background-color: #00ADB5;
+    background-image:
+        linear-gradient( /* places a color gradient over the photo because it’s listed first. */ 
+            to right, /* there are 2 set on nums as the gradient transitions from left to right. */ 
+            rgba(224, 247, 247, 0.90), /* creates a pale teal color. The first three numbers are red, green, and blue. */ 
+            rgba(224, 247, 247, 0.75) /* last num is opacity */
+        ),
+        url("../images/education-bg.png");
+    background-size: cover; /* so it doesn't stretch or repeat */
+    background-position: center;
+    background-repeat: no-repeat;
     color: #222831;
 }
 
@@ -120,6 +130,7 @@ header h1, header h2 { /* made this selector to only effect the h1 and h2 inside
     position: sticky;
     top: 0;
     z-index: 1000;
+    border: 1px solid #00ADB5;
 }
 
 .main-nav a {
