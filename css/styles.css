@@ -1,0 +1,111 @@
+/* Color Palette
+#222831 - Charcoal    --> Header and footer backgrounds
+#393E46 - Slate       --> Main text on light backgrounds
+#00ADB5 - Teal        --> Education background, with charcoal text
+#EEEEEE - Off-white   --> Work Experience background; text on dark backgrounds
+*/
+
+/* Global styles 
+------------------------------------*/
+html {
+    box-sizing: border-box; /* include padding and border in the element's total width and height */
+}
+
+*, *:before, *:after {
+    box-sizing: inherit; /* ensure all elements and pseudo-elements inherit the box-sizing from html */
+}
+
+body {
+    margin: 0; /* Remove the default browser margin */
+    font-family: "Source Sans 3", Arial, sans-serif;
+    font-size: 1rem;
+    line-height: 1.6;
+    font-weight: 400;
+}
+
+h1, h2 {
+    font-family: "Merriweather", Georgia, serif;
+    font-weight: 700;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin-top: 0; /* Remove the space from above */
+}
+
+h3 {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+header, section, footer {
+    display: flow-root; /* make sure layers are properly stacked */
+}
+
+.content-wrap {
+    max-width: 950px; /*max width so it becomes flexible*/
+    margin: 0 auto;
+    padding: 50px; /* padding for consistency */
+    overflow: hidden; /* clear the float for the profile image */
+}
+
+/* Header & Footer 
+------------------------------------*/
+header{
+    background: #222831;
+    color: #EEEEEE;
+}
+
+footer{
+    background: #222831;
+    color: #EEEEEE;
+    text-align: center; /* Center the text in the footer */
+}
+
+.contact-info a {
+    color: white;
+    padding: 10px; 
+    display: inline-block; /* we want the links to align side by side */
+}
+
+.profile-img {
+    border-radius: 50%; /* make the profile image circular */
+    /* width: 300px; height is not needed as it will be automatically set to match the width: NOT NEEDED NO MORE AS COLUMN-NARROW GOT ADDED */
+    /* float: left; make the profile image float to the left: NOT NEEDED NO MORE AS COLUMN-NARROW GOT ADDED */
+    /* margin-right: 30px; add some space between the profile image and the text: NOT NEEDED NO MORE AS COLUMN-NARROW GOT ADDED */
+}
+
+header h1, header h2 { /* made this selector to only effect the h1 and h2 inside the header */
+    margin: 0; 
+}
+
+.column-narrow {
+    width: 30%; 
+    float: left; 
+    padding-right: 3%; 
+    min-height: 175px;
+}
+
+.column-wide {
+    width: 70%; 
+    float: left; 
+    min-height: 225px;
+}
+
+/* Work Experience
+------------------------------------*/
+.work-experience{
+    background: #EEEEEE;
+    color: #393E46;
+}
+
+/* Education
+------------------------------------*/
+.education{
+    background: #00ADB5;
+    color: #222831;
+}
