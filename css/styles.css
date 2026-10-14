@@ -120,7 +120,6 @@ header h1, header h2 { /* made this selector to only effect the h1 and h2 inside
     background-repeat: no-repeat;
     background-attachment: fixed; /* so the image becomes scrollable with the page */ 
     color: #222831;
-    
 }
 
 /* Navigation bar 
