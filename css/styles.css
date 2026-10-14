@@ -118,7 +118,9 @@ header h1, header h2 { /* made this selector to only effect the h1 and h2 inside
     background-size: cover; /* so it doesn't stretch or repeat */
     background-position: center;
     background-repeat: no-repeat;
+    background-attachment: fixed; /* so the image becomes scrollable with the page */ 
     color: #222831;
+    
 }
 
 /* Navigation bar 
